@@ -1,0 +1,36 @@
+# Frameworks con React:
+
+- creo la app con vite, desde el simbolo de sistema con el comando create create vite@latest
+- Me va a pedir installar una nueva version de vite, despues que agregue el nombre y el lenguaje javascript SWC
+- Luego, me va a pedir que le tipee el comando npm install y se creará la app con el localHost 
+- Para esto solo necesito el dejar en mi App.jsx un <div> y un <h1> con el titulo (Frameworks Css en React)
+- Tambien en el index.html, le modifico el <title> a (Frameworks Css en React) para la pestaña del navegador
+- En el App.jsx importo React from "react"
+
+# Bootstrap:
+- Luego,  Creo mi carpeta components y el archivo Bootstrap,jsx
+- Para instalar Bootstrap, lo puedo hacer desde un CDN copiado al fichero  index.html en el  <head> el <link> y debajo , en el body el
+  <script>
+- Como ejemplo puedo trabajar (copiar) con un Navbar de los componentes de Bootstrap y adaptarlo a JSX. Lo hago , creando un componente
+  Navbar dentro de mi  bootstrap component (debreria ser un fichero aparte) y le pego el contenido Bootstrap dentro de mi componente <Navbar>
+- debo pasar los atributos html de Bootstrap a JSX (class, por className, el cierre en las etiquetas, tabIndex por tabindex, etc)
+- Luego lo renderizo en el return de mi componente Bootstrap 
+
+# Bulma:
+- tiene la ventaja de que te dá el código css y el Js aparte, por si querés usar solo el css
+- Para trabajarlo, igual puedo copiar el CDN en el <Head>
+    OJO: si estoy trabajando con BOotstrap , por un tema de nombre de clases, no debo trabajar con otro Framework CSs (Bulma, Tailwin, etc)
+
+
+# React-bootstrap:
+- Lo instalo y chequeo las dependencias en el package.json
+- importo  la hoja de estilos de Bootstrap (import 'bootstrap/dist/css/bootstrap.min.css';) en  mi componente
+ OJO: es recomendable importarlo en  src/index.js or App.js file 
+- Si tomo como ejempolo el mismo Navbar del bootstrap, en este caso ya el codigo no es html/css/JS, sino un codigo jsx basado en componentes
+- Luego si los copio y pego dentro del componente (ReactBootstrap), me va a pedir que importe cada uno de los componentes que estan en el Navbar 
+  y que los posee el Framework ReactBootstrap
+
+# Material UI:
+- Recordar que se necesita la fuente roboto y la tipografia del Material Icon, por eso se copia el link de la misma en el index.html
+  OJO: Los icons yta están instalados como dependencias
+- Como es mucho código, creo un componente para una card (MaterialCard.jsx)
